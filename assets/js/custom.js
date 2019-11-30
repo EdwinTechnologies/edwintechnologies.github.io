@@ -2,7 +2,7 @@
 
 
 	/* ----------------------------------------------------------- */
-	/*  2. FIXED MENU
+	/*  2. STCIKY HEADER
 	/* ----------------------------------------------------------- */
 
 
@@ -15,24 +15,9 @@
 	    }
 	});
 
-		
+	
 	/* ----------------------------------------------------------- */
-	/*  2. FEATURED SLIDE (SLICK SLIDER)
-	/* ----------------------------------------------------------- */
-
-		$('.mu-featured-slide').slick({
-		  arrows: false,
-		  dots: true,
-		  infinite: true,
-		  speed: 500,
-		  autoplay: true,
-		  cssEase: 'linear'
-		});
-
-
-
-	/* ----------------------------------------------------------- */
-	/*  3. MENU SMOOTH SCROLLING
+	/*  3. SCROLLER
 	/* ----------------------------------------------------------- */ 
 
 		//MENU SCROLLING WITH ACTIVE ITEM SELECTED
@@ -82,62 +67,6 @@
 		         .end().filter("[href=\\#"+id+"]").parent().addClass("active");
 		   }           
 		})
-
-
-	/* ----------------------------------------------------------- */
-	/*  4. PORTFOLIO GALLERY
-	/* ----------------------------------------------------------- */ 
-		$('.filtr-container').filterizr();
-
-		//Simple filter controls
-
-	    $('.mu-simplefilter li').click(function() {
-	        $('.mu-simplefilter li').removeClass('active');
-	        $(this).addClass('active');
-	    });
-	
-	/* ----------------------------------------------------------- */
-	/*  5. GOOGLE MAP
-	/* ----------------------------------------------------------- */ 
-		    
-	    $('#mu-google-map').click(function () {
-		    $('#mu-google-map iframe').css("pointer-events", "auto");
-		});
-		
-		$("#mu-google-map").mouseleave(function() {
-		  $('#mu-google-map iframe').css("pointer-events", "none"); 
-		});
-		
-		
-
-	/* ----------------------------------------------------------- */
-	/*  6. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX )
-	/* ----------------------------------------------------------- */ 
-
-	$('.mu-imglink').magnificPopup({
-	  type: 'image',
-	  mainClass: 'mfp-fade',
-	  gallery:{
-	    enabled:true
-	  }
-	});
-
-	/* ----------------------------------------------------------- */
-	/*  7. CLIENT TESTIMONIALS (SLICK SLIDER)
-	/* ----------------------------------------------------------- */
-
-		$('.mu-testimonial-slide').slick({
-		  arrows: false,
-		  dots: true,
-		  infinite: true,
-		  speed: 500,
-		  autoplay: true,
-		  cssEase: 'linear'
-		});
-
-
-	
-	
 })( jQuery );
 
 
