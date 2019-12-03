@@ -45,6 +45,13 @@
 	display: block;
 }
 
+.center_cat {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+}
+
 .social-button {
 
 	transition: all 500ms ease; 
@@ -83,7 +90,8 @@ ul li {
 
 a { 
 	text-decoration: none;
-	color: #ee6e73;  
+	color: #ee6e73;
+	
 }
 
 a:hover,
